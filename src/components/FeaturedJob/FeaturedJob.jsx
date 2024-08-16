@@ -23,9 +23,10 @@ const FeaturedJob = ({ job }) => {
         {company_name}
       </span>
       <div className="mb-4">
-        <span className="font-extrabold text-base text-[#937aff] rounded-[4px] px-5 py-2 border border-[#937aff] mr-4">
-          {remote_or_onsite}
-        </span>
+     
+          <span className="font-extrabold text-base text-[#937aff] rounded-[4px] px-5 py-2 border border-[#937aff] mr-4">
+          {remote_or_onsite }
+          </span>
         <span className="font-extrabold text-base text-[#937aff] rounded-[4px] px-5 py-2 border border-[#937aff]">
           {job_type}
         </span>
@@ -41,7 +42,10 @@ const FeaturedJob = ({ job }) => {
           {salary}
         </span>
       </div>
-      <Link to={`/job_details/${id}`}  className="bg-[#937aff] rounded-[4px] font-extrabold text-[20px] text-white px-5 py-2">
+      <Link
+        to={`/job_details/${id}`}
+        className="bg-[#937aff] rounded-[4px] font-extrabold text-[20px] text-white px-5 py-2"
+      >
         View Details
       </Link>
     </div>

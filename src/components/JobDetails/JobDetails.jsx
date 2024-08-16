@@ -1,11 +1,13 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Header from "../Header/Header";
+import { saveToLocalSotrage } from "../../util/localstorage";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
-  const job = jobs.find((job) => job.id == idInt);
+
+  const job = jobs.find((job) => job.id === idInt);
   const {
     job_title,
     salary,
@@ -24,6 +26,11 @@ const JobDetails = () => {
   const job_subHeading =
     "font-bold text-xl text-[#474747] mb-[16px] inline-block";
   const job_pra = `font-medium text-xl text-[#757575]`;
+
+  const handleForAppliedJobs = () => {
+    saveToLocalSotrage(idInt);
+    console.log(idInt);
+  };
 
   return (
     <div>
@@ -76,9 +83,12 @@ const JobDetails = () => {
                 </span>
               </div>
             </div>
-            <Link className="bg-[#937aff] rounded-[4px] font-extrabold text-[20px] text-white w-full py-5 mt-6 inline-block text-center">
-              Apply Job
-            </Link>
+            <button
+              onClick={handleForAppliedJobs}
+              className="bg-[#937aff] rounded-[4px] font-extrabold text-[20px] text-white w-full py-5 mt-6 inline-block text-center cursor-pointer"
+            >
+              Apply Now
+            </button>
           </div>
         </div>
       </div>
