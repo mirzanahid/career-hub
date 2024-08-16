@@ -4,7 +4,7 @@ import user from "../../assets/images/user.png";
 const Banner = () => {
   return (
     <div className="bg-[#f9f9ff] pt-[130px]">
-      <div className="max-w-[1320px] mx-auto flex ">
+      <div className="max-w-[1320px] mx-auto flex justify-between">
         <div className="mt-[90px]">
           <h1 className="font-extrabold text-[72px] text-[#1A1919] w-[568px] leading-[90px] mb-[24px]">
             One Step Closer To Your{" "}

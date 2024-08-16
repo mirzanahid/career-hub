@@ -1,8 +1,12 @@
+import Header from "../../components/Header/Header"
 
 
 const AppliedJobs = () => {
   return (
-    <div>AppliedJobs</div>
+    <div>
+      <Header page_title="Applied Jobs"></Header>
+      
+    </div>
   )
 }
 

@@ -17,8 +17,8 @@ const NavBar = () => {
   );
 
   return (
-    <div className="">
-      <div className="navbar bg-transparent absolute top-0  z-[999] max-w-[1250px] ">
+    <div className=" max-w-[1320px] mx-auto">
+      <div className="navbar bg-transparent absolute top-8  z-[999] max-w-[1320px] ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,14 +44,14 @@ const NavBar = () => {
               {links}
             </ul>
           </div>
-          <Link to={'/'} className="cursor-pointer text-xl">
+          <Link to={"/"} className="cursor-pointer text-xl">
             <img src={logo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu menu-horizontal px-1">{links} </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end ">
           <Link className="bg-[#937aff] rounded-[4px] font-extrabold text-[20px] text-white px-5 py-3">
             Start Applying
           </Link>

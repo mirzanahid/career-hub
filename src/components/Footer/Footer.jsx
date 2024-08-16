@@ -68,11 +68,9 @@ const Footer = () => {
             +1 777 - 978 - 5570
           </a>
         </nav>
-
-        
       </footer>
-    <div className="max-w-[1320px] mx-auto">
-    <div className="flex justify-between items-center pt-[50px]">
+      <div className="max-w-[1320px] mx-auto">
+        <div className="flex justify-between items-center pt-[50px]">
           <span className="font-normal text-[rgba(255,255,255,40%)] text-[14px]">
             @2023 <span className="font-semibold">CareerHub.</span> All Rights
             Reserved
@@ -81,7 +79,7 @@ const Footer = () => {
             Powered by <span className="font-bold">CareerHub</span>
           </span>
         </div>
-    </div>
+      </div>
     </div>
   );
 };
