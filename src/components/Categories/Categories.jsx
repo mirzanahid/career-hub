@@ -10,7 +10,7 @@ const Categories = () => {
       .then((data) => setCategories(data));
   }, []);
   return (
-    <div>
+    <div className="pt-[130px]">
       <div className="text-center mb-8">
         <h3 className="font-extrabold text-5xl text-black mb-4">
           Job Category List

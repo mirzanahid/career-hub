@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import ErrorPage from "./components/ErrorPage/ErrorPage";
-import Root from "./components/Button/Root/Root";
+import Root from "./components/Root/Root";
 import Statistics from "./pages/Statistics/Statistics";
 import AppliedJobs from "./pages/AppliedJobs/AppliedJobs";
 import Blog from "./pages/Blog/Blog";
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/job_details/:id",
-        loader: ()=> fetch('../public/jobs.json'),
+        loader: ()=> fetch('./jobs.json'),
         element: <JobDetails></JobDetails>
       },
     ]

@@ -28,7 +28,7 @@ const JobDetails = () => {
   return (
     <div>
       <Header page_title={`Job Details`}></Header>
-      <div className="max-w-[1250px] mx-auto py-[130px]">
+      <div className="py-[130px] max-w-[1320px] mx-auto">
         <div className="flex gap-5">
           <div className="w-2/3">
             <p className={heading}>
